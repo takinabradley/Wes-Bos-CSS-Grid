@@ -17,3 +17,11 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - You'll always have one more track than you'll have columns/rows
 
 - devtools displays explicit tracks, implicit tracks, grid edge, and gaps differently.
+
+## 05 CSS Grid Implicit vs Explicit Tracks
+
+- If you create tracks, they'll be marked as such (explict)
+
+- If you didn't, and there is no room for elements that are supposed to fit in the grid, the browser will create implicit tracks.
+
+- `grid-auto-rows`/`grid-auto-columns` allows you to define how implicit rows and columns should be sized.
