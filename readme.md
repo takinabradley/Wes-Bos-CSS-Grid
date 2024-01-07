@@ -50,3 +50,14 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - Telling an item to span more than there are available columns left will cause it to flow to the next line, and create dead space in the layout. By default, more implict rows will be created. Telling an item to span more than there are template columns will make new implicit columns
 
 - Using the `dense` keyword in `grid-auto-flow` will cause elements in front of a spanning element to fill in the dead space.
+
+## 10 Placing Grid Items
+
+- `grid-column` is shorthand for `grid-column-start` and `grid-column-end`.
+
+- `grid-column-start` tells an item what track it should start at
+- `grid-column-end` tells an item what track it should end at
+- `grid-column`/`grid-row` can also take `start / end` value syntax
+- `span` value just says to start were you would normally be, and span from there for each of these.
+- `-1` can be used as a value to select the end, if you don't know how many tracks you might have. Higher negative numbers will select from the end. This may behave unexpected for rows if you don't have explicit rows
+- (same for `grid-row-start`/`grid-row-end`/`grid-row`)
