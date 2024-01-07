@@ -36,3 +36,7 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - `fr` units will take up the space left when you use other units
 - The default width of block elements you might use as a grid is 100%, the default height depends on content. That's why `fr` units on height don't by default try to take up the height of the viewport.
 - `auto` with an `fr` unit will fit to the size of the content, and allow `fr` units to take up the rest of the space. It will effect other elements in the grid.
+
+## 08 - CSS Grid repeat function
+
+- The repear function will repear multiple values passed into it
