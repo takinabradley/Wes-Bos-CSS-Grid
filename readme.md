@@ -40,3 +40,13 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 ## 08 - CSS Grid repeat function
 
 - The repear function will repear multiple values passed into it
+
+## 09 - Sizing grid items
+
+- setting a width on a grid-item will effect the layout of the grid Similarly, if content on a grid-item is too long, it will do the same thing
+
+- The `grid-column` option for grid-items can help us here. For example, `grid-column: span 2` tells an item to span two columns without effecting the rest of the grid layout.
+
+- Telling an item to span more than there are available columns left will cause it to flow to the next line, and create dead space in the layout. By default, more implict rows will be created. Telling an item to span more than there are template columns will make new implicit columns
+
+- Using the `dense` keyword in `grid-auto-flow` will cause elements in front of a spanning element to fill in the dead space.
