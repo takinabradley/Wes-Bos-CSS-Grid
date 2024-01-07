@@ -25,3 +25,9 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - If you didn't, and there is no room for elements that are supposed to fit in the grid, the browser will create implicit tracks.
 
 - `grid-auto-rows`/`grid-auto-columns` allows you to define how implicit rows and columns should be sized.
+
+## 06 grid-auto-flow explained
+
+- `grid-auto-flow` determines if by default CSS Grid tacks new elements onto columns or onto rows
+
+## 07 Sizing tracks
