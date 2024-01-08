@@ -63,3 +63,11 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - (same for `grid-row-start`/`grid-row-end`/`grid-row`)
 
 ## 11 Spanning and Placing Cardio
+
+## 12 auto-fit and auto-fill
+
+- The `auto-fit` keyword for the `repeat()` function tells CSS Grid to automatically create rows/columns until it doesn't need to make any more (ends the grid at the end of the content).
+  (It seems to squeeze content down and remove unused cells in order to fit it)
+- The `auto-fill` keyword for the `repeat()` function tells CSS Grid to do the same, but to fill the additional space with rows/columns of a similar size.
+
+- auto-fill allows you to place items past the normal auto-fit of a grid, but still keep the ability to place items past it easily with values like `-1`.
