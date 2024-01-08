@@ -79,3 +79,15 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - `minmax` is useful with `fr` units, as it allows the items to stretch/shrink a bit based on the min/max size as the window resizes.
 
 - `fit-content` can be used sometimes to fit the content to a maximum width, with the mimimum being the width of the content (?)
+
+## 14 - Grid Template Areas
+
+### Areas
+
+- `grid-template-areas` allows you to name cells/spans of cells, and then place individual grid-items in those named cells with `grid-area: <name>`
+
+- `grid-template-areas` are easily redefined via media queries
+
+### Area line names
+
+When you use areas, you get area line names for free like `<area-name>-start` and `<area-name>-end`
