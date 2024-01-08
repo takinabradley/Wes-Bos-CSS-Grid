@@ -71,3 +71,11 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 - The `auto-fill` keyword for the `repeat()` function tells CSS Grid to do the same, but to fill the additional space with rows/columns of a similar size.
 
 - auto-fill allows you to place items past the normal auto-fit of a grid, but still keep the ability to place items past it easily with values like `-1`.
+
+## 13 Using minmax() for responsive grids
+
+- `minmax` with auto-fill/auto-fit will create tracks matching the maximum value
+
+- `minmax` is useful with `fr` units, as it allows the items to stretch/shrink a bit based on the min/max size as the window resizes.
+
+- `fit-content` can be used sometimes to fit the content to a maximum width, with the mimimum being the width of the content (?)
