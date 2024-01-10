@@ -115,3 +115,9 @@ CSS-tricks complete guide to grid is a useful guide, just like it's flexbox equi
 The `items` and `self` properties control how the content inside each grid item is displayed between the tracks they fit inside. The `content` options control how all the items are laid out in the container.
 
 `place-items`/`place-content` can also be used as a shorthand to set justify/align properties of items/content at the same time.
+
+## 18 - Re-ordering Grid Items
+
+`order` can be used to change the order of grid items on the page. You may find you need to give many items an order to get items where you want.
+
+`order` effects selecting, and the order screen readers will read (according to wes bos, but it seems like selecting and focus happen in order of the markup. Things should only go bad if it's not okay for content to be read in markup order, I think. More testing needed)
