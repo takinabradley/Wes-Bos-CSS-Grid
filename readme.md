@@ -124,8 +124,14 @@ The `items` and `self` properties control how the content inside each grid item 
 
 ## 19 Nesting Frid with Album Layouts
 
-`repeat(auto-fit, minMax(min, max))` is super useful for responsive grid layouts.
+`repeat(auto-fit, minMax(min, max))` is super useful for responsive grid layouts where you don't want a strict size for grid items.
 
 - grids can be nested, of course
 
 - images can be weird. They're the only element that're not exactly responsive by default.
+
+## 20 - Image Gallery
+
+Placing things in the same grid area overlays them on top of each other by default.
+
+This is nice, since it allows us not to have to mess with positioning CSS.
