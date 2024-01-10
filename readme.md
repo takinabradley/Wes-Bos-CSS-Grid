@@ -103,3 +103,15 @@ You can put multiple names in the square brackets separated by spaces.
 ## 16 - grid-auto-flow dense block fitting
 
 `grid-auto-flow: dense` can be used to fill holes in the layout by rearranging items. It's not perfect, though, and if you don't have a `grid-item` that fits in the hole, the hole will not be filled.
+
+## 17 - CSS Grid Alignment + Centering
+
+Grid can be useful for centering in non-grid layouts. Useful properties like `justify-content`/`align-content`, `justify-items`/`align-items` exist for grid containers, and items can justify/align themselves with `justify-self`/`align-self`.
+
+`justify` works across the x-axis in CSS grid, and `align` works across the y-axis.
+
+CSS-tricks complete guide to grid is a useful guide, just like it's flexbox equivalent.
+
+The `items` and `self` properties control how the content inside each grid item is displayed between the tracks they fit inside. The `content` options control how all the items are laid out in the container.
+
+`place-items`/`place-content` can also be used as a shorthand to set justify/align properties of items/content at the same time.
