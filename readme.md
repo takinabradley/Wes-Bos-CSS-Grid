@@ -121,3 +121,11 @@ The `items` and `self` properties control how the content inside each grid item 
 `order` can be used to change the order of grid items on the page. You may find you need to give many items an order to get items where you want.
 
 `order` effects selecting, and the order screen readers will read (according to wes bos, but it seems like selecting and focus happen in order of the markup. Things should only go bad if it's not okay for content to be read in markup order, I think. More testing needed)
+
+## 19 Nesting Frid with Album Layouts
+
+`repeat(auto-fit, minMax(min, max))` is super useful for responsive grid layouts.
+
+- grids can be nested, of course
+
+- images can be weird. They're the only element that're not exactly responsive by default.
