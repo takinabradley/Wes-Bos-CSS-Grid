@@ -91,3 +91,11 @@ Hey! These are the starter files and finished solutions for Wes Bos's video cour
 ### Area line names
 
 When you use areas, you get area line names for free like `<area-name>-start` and `<area-name>-end`
+
+## 15 - Naming Lines in CSS Grid
+
+You can name lines using square brackets `[]` in `grid-template-columns`/`grid-template-rows`. Then you can use these names in `grid-column`/`grid-row`.
+
+Ex: `grid-template-columns: [left] 1fr [right]`
+
+YOu can put multiple names in the square brackets separated by spaces.
