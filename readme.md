@@ -98,4 +98,8 @@ You can name lines using square brackets `[]` in `grid-template-columns`/`grid-t
 
 Ex: `grid-template-columns: [left] 1fr [right]`
 
-YOu can put multiple names in the square brackets separated by spaces.
+You can put multiple names in the square brackets separated by spaces.
+
+## 16 - grid-auto-flow dense block fitting
+
+`grid-auto-flow: dense` can be used to fill holes in the layout by rearranging items. It's not perfect, though, and if you don't have a `grid-item` that fits in the hole, the hole will not be filled.
