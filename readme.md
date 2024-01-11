@@ -135,3 +135,60 @@ The `items` and `self` properties control how the content inside each grid item 
 Placing things in the same grid area overlays them on top of each other by default.
 
 This is nice, since it allows us not to have to mess with positioning CSS.
+
+## 21 - Flexbox vs CSS Grid
+
+In general, grid can do everything flexbox can do.
+
+Flex items can be transitioned, while at the time of the course grid was less transition-able (save the gap property).
+
+Grid is much more consistant across browsers.
+
+It's easy to add more rows, if needed, when using grid for single-dimension layouts.
+
+### Axis flipping
+
+You can adjust `grid-template-columns` from a multi-column layout to a single column layout easily.
+
+It is harder to flip the _order_ of all elements, like you could do in flexbox.
+
+### Controls on the right
+
+With grid, it's easy to separate elements that are meant to be on the left/right side of a container by setting the amount of space you want the first items to use with `grid-template-columns`, then using `grid-auto-flow: column` to tell the rest of the items to squeeze into the left side. This doesn't require an extra wrapper for the left/right elements!
+
+### Flex on item
+
+Flexbox makes it super easy to take a container of many items, and give a single item `flex: 1` so it will take up all the available space.
+
+In Grid, you'd have to write out your `grid-template-columns` property, telling each item how much space they should use.
+
+The flexbox version is also more maintainable, because if one of the other elements that aren't growing are removed/reordered, you don't have to re-write the `grid-template-columns` property.
+
+### Perfectly Centered
+
+About the same
+
+### Self control
+
+- There is a `grid-template` shorthand for `grid-template-columns`/`grid-template-rows`/`grid-template-areas`
+
+Grid items can align and justify themselves in their grid-areas.
+Flex items can just align themselves.
+
+### Stacked Layout
+
+Grid lines are rigid, which means you'd have to to manually place items if you wanted each row to be offset from each other. Flex is a much easier option for this with the `flex-wrap` property.
+
+### Unknown content size
+
+Unknown content size can be handled with `auto` when using things ike `grid-template-columns`
+
+### Unknown number of items
+
+You can get more predicable wrapping behavior with `grid-template-columns: repeat(auto-fit, minmax(min, max));` than with flexbox.
+
+### Variable widths on each row
+
+Much easier for flexbox.
+
+Changing the amount of columns in a single row isn't possible with grid, and it'd be a pain to manually span each item.

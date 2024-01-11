@@ -50,6 +50,7 @@
       .item__img {
         min-width: 100%;
         min-height: 100%;
+        object-fit: cover;
       }
 
       .item.h1 {
@@ -137,7 +138,7 @@
       galleryItem.className = `item h${h} v${v}`;
       const galleryImg = document.createElement("img");
       galleryImg.className = "item__img";
-      galleryImg.src = `https://picsum.photos/400?random=${h + v}`;
+      galleryImg.src = `https://picsum.photos/400`;
       const galleryOverlay = document.createElement("div");
       galleryOverlay.className = "item__overlay";
       const galleryOverlayBtn = document.createElement("button");
