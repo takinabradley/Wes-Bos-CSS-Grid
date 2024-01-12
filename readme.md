@@ -193,11 +193,11 @@ Much easier for flexbox.
 
 Changing the amount of columns in a single row isn't possible with grid, and it'd be a pain to manually span each item.
 
-## 21 Recreating Codepen
+## 22 Recreating Codepen
 
 Grid is often helpful in web applications specifically, where different widgets need to fit somewhere in the layout. It can be easy to assemble a complex looking layout with just grid.
 
-## 22 - Bootstrappy grid with CSS Variables
+## 23 - Bootstrappy grid with CSS Variables
 
 - If you want to have a very rigid grid, you'll have to set a grid items `min-width` to be `0`, or use `minmax` to give each cell in a column/row a min width of `0`.
 
