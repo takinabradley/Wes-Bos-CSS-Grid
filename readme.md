@@ -196,3 +196,11 @@ Changing the amount of columns in a single row isn't possible with grid, and it'
 ## 21 Recreating Codepen
 
 Grid is often helpful in web applications specifically, where different widgets need to fit somewhere in the layout. It can be easy to assemble a complex looking layout with just grid.
+
+## 22 - Bootstrappy grid with CSS Variables
+
+- If you want to have a very rigid grid, you'll have to set a grid items `min-width` to be `0`, or use `minmax` to give each cell in a column/row a min width of `0`.
+
+- You can add a CSS variable to a class to determine how much it spans, and editing that variable via JS/inline styles on a specific item will make that item expand/shrink on the grid.
+
+- You can do the same thing for determine grid size by using something like a `--cols` variable in a `repeat()` function.
