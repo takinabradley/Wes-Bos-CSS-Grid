@@ -32,3 +32,142 @@ h6 {
   margin: 0;
   font-size: 1.5em;
 }
+
+p {
+  margin: 0;
+}
+
+.codepen {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+/* PEN STYLES */
+.pen {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.pen__details {
+  flex: 1 1 auto;
+  color: white;
+}
+
+.pen__author {
+  color: gray;
+}
+
+.button {
+  background-color: #272727;
+  color: white;
+  font-size: 1.25em;
+  border: none;
+  padding: 0.5em;
+  position: relative;
+  border-radius: 5px;
+}
+
+.button--small {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.button--dirty::before {
+  position: absolute;
+  content: "";
+  background-color: yellow;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.button:hover {
+  background-color: #404040;
+}
+
+/* CODE STYLES */
+.code {
+  display: flex;
+  gap: 1em;
+  padding: 0.5em;
+  background-color: #272727;
+  overflow: scroll;
+}
+
+.editor {
+  flex: 1 0 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  background-color: #182229;
+  padding: 5px;
+  gap: 5px;
+  font-size: 1.25em;
+  color: gray;
+  font-weight: 900;
+  justify-items: start;
+  align-content: center;
+}
+
+.editor__code {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  background-color: #19262d;
+  min-width: 0px;
+}
+
+.editor__gutter {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  font-weight: 900;
+}
+
+.editor__input {
+  background-color: #19262d;
+  border: none;
+  color: gray;
+  font-size: 1.5em;
+  min-width: 100%;
+}
+
+/* FOOTER STYLES */
+.settings {
+  background-color: #272727;
+  padding: 0.5em;
+}
+
+.settings .button {
+  background-color: black;
+  padding: 0 0.5em;
+}
+
+/* MEDIA QUERIES */
+/* @media (max-width: 1010px) {
+  .codepen {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+  }
+
+  .pen {
+    grid-column: span 2;
+  }
+
+  .code {
+    flex-direction: column;
+  }
+} */

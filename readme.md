@@ -192,3 +192,7 @@ You can get more predicable wrapping behavior with `grid-template-columns: repea
 Much easier for flexbox.
 
 Changing the amount of columns in a single row isn't possible with grid, and it'd be a pain to manually span each item.
+
+## 21 Recreating Codepen
+
+Grid is often helpful in web applications specifically, where different widgets need to fit somewhere in the layout. It can be easy to assemble a complex looking layout with just grid.
