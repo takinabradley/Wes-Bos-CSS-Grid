@@ -204,3 +204,11 @@ Grid is often helpful in web applications specifically, where different widgets 
 - You can add a CSS variable to a class to determine how much it spans, and editing that variable via JS/inline styles on a specific item will make that item expand/shrink on the grid.
 
 - You can do the same thing for determine grid size by using something like a `--cols` variable in a `repeat()` function.
+
+## 24 - Responsive Website
+
+- Flex is useful when you want things to take up only as much space as their content
+
+- Pseudo elements of a element with `display: grid` are part of it's grid layout.
+
+- CSS Variables have fallback values, if a variable does not exist.

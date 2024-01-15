@@ -1,5 +1,7 @@
 body {
-  font-size: 15px;
+  font-size: 1.25em;
+  margin: min(75px, 5%) 10%;
+  background-color: rgb(238, 73, 128);
 }
 
 button {
@@ -12,3 +14,210 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* WRAPPER STYLES */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+
+  gap: 0.5em;
+
+  grid-template-areas:
+    "top"
+    "bottom";
+}
+
+/* TOP HERO STYLES */
+.wrapper .top {
+  display: grid;
+  grid-template-rows: 4fr 1fr 1fr;
+  gap: 0.5em;
+}
+
+.wrapper .hero {
+  background-image: url(images/taco.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.5em;
+}
+
+.hero > * {
+  background-color: orange;
+  padding: 0.25em;
+}
+
+.wrapper .top .cta {
+  background-color: orange;
+  text-align: center;
+  padding: 0.25em 0;
+}
+
+.wrapper .top .cta .price {
+  font-size: 4em;
+  font-weight: 100;
+}
+
+/* TOP MENU STYLES */
+.wrapper .menu {
+  grid-area: top;
+}
+
+.wrapper .menu .menu-list {
+  display: grid;
+  gap: 0.25em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  align-items: center;
+}
+
+.wrapper .menu .menu-list li {
+  background-color: orange;
+  text-align: center;
+  padding: 0.5em 1em;
+  min-width: min-content;
+}
+
+/* These styles toggled via JS */
+.wrapper .menu button[aria-expanded="false"] span.close,
+.wrapper .menu button[aria-expanded="false"] + .menu-list {
+  display: none;
+}
+
+.wrapper .menu button[aria-expanded="true"] span.open {
+  display: none;
+}
+
+/* FEATURES STYLES */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5em;
+  margin: 0.5em 0;
+}
+
+.feature {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1em;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  align-items: center;
+  padding: 1em;
+}
+
+.about__details {
+  flex: 0 1 max-content;
+}
+
+.about__details button {
+  margin: 1em 0;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.25em;
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  position: relative;
+}
+
+.gallery h2:before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 110%;
+  top: calc(40%);
+  height: 10px;
+  width: 25vw;
+  background-color: orange;
+}
+
+.gallery h2:after {
+  position: absolute;
+  content: "";
+  display: block;
+  right: 110%;
+  top: calc(40%);
+  height: 10px;
+  width: 25vw;
+  background-color: orange;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .wrapper .top {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .wrapper .top .hero {
+    grid-column: 1 / -1;
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrapper .top {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "hero cta1"
+      "hero cta2";
+  }
+
+  .wrapper .top .hero {
+    grid-area: hero;
+    height: 40vh;
+  }
+
+  .wrapper .top .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper .top .cta1 {
+    grid-area: cta1;
+  }
+
+  .wrapper .top .cta2 {
+    grid-area: cta2;
+  }
+
+  .wrapper .menu {
+    grid-area: bottom;
+  }
+
+  .wrapper .menu button {
+    display: none;
+  }
+}
