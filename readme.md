@@ -212,3 +212,5 @@ Grid is often helpful in web applications specifically, where different widgets 
 - Pseudo elements of a element with `display: grid` are part of it's grid layout.
 
 - CSS Variables have fallback values, if a variable does not exist.
+
+## 25 - Full Bleed blog layout

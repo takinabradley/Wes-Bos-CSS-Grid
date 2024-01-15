@@ -1,0 +1,96 @@
+:root {
+  --yellow: #ffc600;
+}
+
+html {
+  color: #444;
+  font-family: Cambria, Cochin, Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: underline wavy var(--yellow);
+}
+
+h1,
+h2 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1.5fr;
+  gap: 1em;
+}
+
+.post h2 {
+  grid-column: 2 / 3;
+  max-width: 1000px;
+}
+
+.post > p {
+  grid-column: 2 / 3;
+  max-width: 1000px;
+}
+
+.post figure,
+.post blockquote {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.post figure img {
+  width: 100%;
+}
+
+.post blockquote {
+  font-size: 80px;
+  font-style: italic;
+}
+
+.tip {
+  background-color: whitesmoke;
+  position: relative;
+  padding: 0 1em;
+  align-self: center;
+  grid-row: span 4;
+}
+
+.tip::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  background-color: orange;
+  height: 100%;
+  width: 5px;
+}
+
+.tip-right {
+  grid-column: 3 / 4;
+  justify-self: start;
+}
+
+.tip-left {
+  grid-column: 1 / 2;
+  justify-self: end;
+}
+
+.tip-left::before {
+  left: 100%;
+}
